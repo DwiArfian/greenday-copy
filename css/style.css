@@ -97,9 +97,10 @@ body {
 button {
     position: relative;
     background: #EB0781;
+    font-family: main-font, serif;
     font-style: italic;
     color: #fff;
-    border: 3px solid #000;
+    border: 3px solid #1f1f1f;
     padding: 10px 14px;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -242,5 +243,130 @@ button:hover {
 
 h1.watch {
     margin-top: 100px;
-    margin-left: -30px;
+}
+
+#saviors .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 120px;
+    margin-bottom: 100px;
+}
+
+#saviors .video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    gap: 30px;
+}
+
+#saviors .videos h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #EB0781;
+}
+
+#saviors .videos .video-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+}
+
+#saviors .videos .video-frame.one {
+    background: url('../assets/videos/video1.jpg') no-repeat center center/cover;
+}
+
+#saviors .videos .video-frame.two {
+    background: url('../assets/videos/video2.png') no-repeat center center/cover;
+}
+
+#saviors .videos .video-frame.three {
+    background: url('../assets/videos/video3.jpg') no-repeat center center/cover;
+}
+
+#saviors .video-frame button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+#saviors button.watch-more {
+    margin-top: -50px !important;
+}
+
+button.visit {
+    margin-top: 50px;
+}
+
+.coffee {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 80px 100px;
+    gap: 70px;
+}
+
+.coffee a {
+    width: 80%;
+}
+
+.coffee a img {
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 5px 300px;
+    width: 100%;
+}
+
+#footer .send {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    align-items: end;
+}
+
+#footer .send .fg {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .send button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+.fg label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #EB0781;
+    margin-bottom: 8px;
+}
+
+.fg input, .fg select {
+    font-size: 1rem;
+    font-style: italic;
+    color: #EB0781;
+    font-family: main-font, serif;
+    width: 100%;
+    height: 44px;
+    padding: 4px 10px;
+    outline: none;
 }
