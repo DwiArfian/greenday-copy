@@ -122,7 +122,7 @@ button:hover {
     position: relative;
 }
 
-.products {
+.products, .products2, .products3 {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -131,17 +131,17 @@ button:hover {
     scrollbar-width: none;
 }
 
-.products::-webkit-scrollbar {
+.products::-webkit-scrollbar, .products2::-webkit-scrollbar, .products3::-webkit-scrollbar {
     display: none;
 }
 
-.products a {
+.products a, .products2 a, .products3 a {
     flex: 0 0 calc(25% - 30px);
     text-decoration: none;
     display: block;
 }
 
-.products img {
+.products img, .products2 img, .products3 img {
     width: 100%;
     border-radius: 8px;
     transition: transform 0.4s ease-in-out; 
@@ -149,11 +149,11 @@ button:hover {
     backface-visibility: hidden;
 }
 
-.products a:hover img {
+.products a:hover img, .products2 a:hover img, .products3 a:hover img {
     transform: rotateY(360deg); 
 }
 
-.scroll-btn {
+.scroll-btn, .scroll-btn2, .scroll-btn3 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -165,11 +165,11 @@ button:hover {
     z-index: 10;
 }
 
-.scroll-btn.left {
+.scroll-btn.left, .scroll-btn2.left, .scroll-btn3.left {
     left: 0;
 }
 
-.scroll-btn.right {
+.scroll-btn.right, .scroll-btn2.right, .scroll-btn3.right {
     right: 0;
 }
 
@@ -430,4 +430,20 @@ button.visit {
     font-style: italic;
     font-size: .9rem;
     text-transform: uppercase;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: #EB0781;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 100;
+    rotate: 90deg;
+}
+
+#scroll-to-top:hover {
+    color: #fff;
 }
