@@ -6,18 +6,18 @@
 
 @font-face {
     font-family: main-font;
-    src: url('../assets/CenturyOldStyleStd-Regular.woff');
+    src: url('../assets/fonts/CenturyOldStyleStd-Regular.woff');
 }
 
 @font-face {
     font-family: main-font;
-    src: url('../assets/CenturyOldStyleStd-Italic.woff');
+    src: url('../assets/fonts/CenturyOldStyleStd-Italic.woff');
     font-style: italic;
 }
 
 @font-face {
     font-family: main-font;
-    src: url('../assets/CenturyOldStyleStd-Bold.woff');
+    src: url('../assets/fonts/CenturyOldStyleStd-Bold.woff');
     font-weight: bold;
 }
 
