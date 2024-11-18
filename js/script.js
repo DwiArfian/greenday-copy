@@ -1,5 +1,7 @@
 const productsContainer = document.querySelector('.products');
 const scrollButtons = document.querySelectorAll('.scroll-btn');
+const termsButton = document.querySelector('#terms-btn');
+const termsText = document.querySelector('#terms-text');
 
 scrollButtons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -11,3 +13,17 @@ scrollButtons.forEach((button) => {
         }
     });
 });
+
+let termShown = false;
+
+termsButton.addEventListener('click', () => {
+    termShown = !termShown;
+    if (termShown) {
+        termsButton.textContent = 'Hide';
+        termsText.classList.add('show');
+    } else {
+        termsButton.textContent = 'Terms';
+        termsText.classList.remove('show');
+    }
+});
+

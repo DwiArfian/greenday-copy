@@ -337,7 +337,7 @@ button.visit {
     width: 100%;
     display: flex;
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     align-items: end;
 }
 
@@ -369,4 +369,65 @@ button.visit {
     height: 44px;
     padding: 4px 10px;
     outline: none;
+}
+
+#footer .terms {
+    font-family: main-font, serif;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    color: #FFF;
+    width: 100%;
+    gap: 10px;
+}
+
+.terms a {
+    align-self: end;
+    text-decoration: none;
+    color: #FFF;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.terms #terms-text {
+    display: none;
+    font-size: .9rem;
+    align-self: center;
+    text-align: center;
+    width: 60%;
+}
+
+.terms #terms-text.show {
+    display: block;
+}
+
+.socials {
+    margin-top: 80px;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.crush-logo {
+    width: 150px;
+    margin-top: 50px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+    margin-bottom: 18px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    font-size: .9rem;
+    text-transform: uppercase;
 }
