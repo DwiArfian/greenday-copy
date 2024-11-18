@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: main-font;
+    src: url('../assets/CenturyOldStyleStd-Regular.woff');
+}
+
+@font-face {
+    font-family: main-font;
+    src: url('../assets/CenturyOldStyleStd-Italic.woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: main-font;
+    src: url('../assets/CenturyOldStyleStd-Bold.woff');
+    font-weight: bold;
+}
+
+body {
+    background: url('../assets/gd-texture.jpg');
+    font-family: main-font, serif;
+}
+
+#hero {
+    background: url('../assets/ai_hero.png') no-repeat center top/cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 40px 200px;
+}
+
+#hero .header img {
+    width: 41vw;
+    margin-bottom: 30px;
+}
+
+#hero .header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#hero .header ul li a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+#hero .header ul li {
+    padding-bottom: 5px;
+}
+
+#hero .header ul li:hover {
+    border-bottom: 2px solid #EB0781;
+}
+
+#hero .news {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    padding: 0px 80px;
+}
+
+#hero .news .new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+#hero .news .new img {
+    width: 320px;
+    margin-bottom: 16px;
+}
+
+#hero .news .new h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+button {
+    position: relative;
+    background: #EB0781;
+    font-style: italic;
+    color: #fff;
+    border: 3px solid #000;
+    padding: 10px 14px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 8px 8px 0px -2px #FFF;
+}
+
+#products {
+    position: relative;
+    padding: 80px 100px;
+    background-color: #121212;
+}
+
+.products-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+.products::-webkit-scrollbar {
+    display: none;
+}
+
+.products a {
+    flex: 0 0 calc(25% - 30px);
+    text-decoration: none;
+    display: block;
+}
+
+.products img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out; 
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.products a:hover img {
+    transform: rotateY(360deg); 
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 15px 20px;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+.scroll-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#newalbum {
+    background: url('../assets/hero.jpg') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 40px 150px;
+}
+
+#newalbum .news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 100px;
+    padding: 0px 80px;
+}
+
+#newalbum .news .new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+#newalbum .news .new h1 {
+    font-size: 4rem;
+    color: #EB0781;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+#newalbum .news .new h1.feat {
+    font-size: 1.7rem;
+}
+
+#newalbum .news .new h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#newalbum .new-button {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
