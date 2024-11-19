@@ -432,6 +432,10 @@ button.visit {
     text-transform: uppercase;
 }
 
+.footer-menu a:hover {
+    color: #EB0781;
+}
+
 #scroll-to-top {
     position: fixed;
     bottom: 50px;
